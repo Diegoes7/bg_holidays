@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { type ScreenType } from '../App';
-import {type Holiday } from '../data/holydays';
+import { type Holiday } from '../data/holydays';
 import { styles } from '../styles';
 
 interface Props {
@@ -86,7 +86,7 @@ const QuizScreen: React.FC<Props> = ({ holiday, onNavigate, onEarnBadge }) => {
 								style={{ ...styles.actionButton, backgroundColor: '#00838F' }}
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.95 }}
-								onClick={() => onNavigate('calendar')}
+								onClick={() => onNavigate('month')}
 							>
 								🏠 Към календара
 							</motion.button>
